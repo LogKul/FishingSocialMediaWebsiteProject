@@ -1,0 +1,16 @@
+Fishing Social Media Platform
+-Similar in design and purpose to Facebook, for people who enjoy fishing
+-Feed is only people you have added
+-Users can make text posts, as well as "Fish posts" where the user can upload an image of a fish along with statistics
+
+Functional Requirements:
+-Users can register accounts using email/username/password
+-Token authentication
+-Users should be able to search for other people and request to add them
+-Users should be able to accept incoming requests
+-Users should be able to block other users
+-Users make text posts
+-Users make fish posts
+-Users should be able to search posts
+-Users can message each other, group messages possible
+-Profile pages, shows post history and fishing statistics (fish caught, biggest fish, etc)
