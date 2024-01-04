@@ -1,0 +1,70 @@
+.App-header {
+    background-color: #363062;
+    min-height: 1vh;
+  }
+  
+  .headerContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1rem;
+  
+    font-size: calc(1px + 1vmin);
+    color: #F5E8C7;
+  }
+
+  .siteName{
+    color: #F5E8C7;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1vw;
+  }
+
+  .navButtons{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin: 0.25rem 0;
+  }
+  
+  .navProfilePic{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .navProfilePic:hover{
+    filter:brightness(1.25);
+  }
+  
+  .navProfilePic:active{
+    filter:brightness(1.5);
+  }
+  
+  .navProfileButton{
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    background-color: black;
+  }
+
+  .navButton{
+    width: 44px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+  }
+
+  .navButtonIcon{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+  }
+
+  .navButtonIcon:hover{
+    filter:brightness(1.25);
+    opacity: 0.75;
+  }

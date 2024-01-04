@@ -1,29 +1,43 @@
-import './App.css';
-import testImage from './Images/RainbowTroutTest.jpg'
+import { BrowserRouter, NavLink, Routes, Route} from 'react-router-dom';
 
+import './Styles/Header.css';
+import profilePic from './Images/ProfilePic.jpg'
+import plusIcon from './Images/plus.png'
+import friendsIcon from './Images/friends.png'
+
+import HomePage from './pages/home.page';
+import RegisterPage from './pages/register.page';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>FishHead</h1>
-      </header>
-      <div className="post">
-        <p className="poster">Gonzo</p>
-        <img src={testImage} alt="postImage" className="postImage" />
-        <div className="postStats">
-          <p className="statTitle">Species</p>
-          <p className="statTitle">Weight</p>
-          <p className="statTitle">Length</p>
 
-          <p className="stat">RainbowTrout</p>
-          <p className="stat">12lbs</p>
-          <p className="stat">40in</p>
-        </div>
-        <p className="caption">
-         This fish is already dead, he just doesn't know it yet.
-        </p>
-      </div>
-    </div>
+  function profileButton(){
+    console.log("baller");
+  }
+
+  return (
+    <BrowserRouter>
+      <nav>
+        <header className="App-header">
+          <div className="headerContent">
+            <a href='/' className="siteName">FishHead</a>
+            <div className="navButtons">
+              <a className="navButton" href='/register'>
+                <img src={plusIcon} alt="addPostButton" className="navButtonIcon" />
+              </a>
+              <a className="navButton">
+                <img src={friendsIcon} alt="addPostButton" className="navButtonIcon" />
+              </a>
+              <a className="navProfileButton" type="submit" onClick={profileButton}>
+                <img src={profilePic} alt="profilePic" className="navProfilePic"/>
+              </a>
+            </div>
+          </div>
+        </header>
+      </nav>
+      <Routes>
+        <Route path='/' element={<HomePage />}></Route>
+        <Route path='/register' element={<RegisterPage />}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
